@@ -108,17 +108,17 @@
   </nav>
   <div class="conatiner">
     <section id="sec1">
-      <form action="DevServlet" method="post">
+      <form action="#" method="post">
             <h3>Controller</h3>
-         	  <button class="b1" onclick="myFun(1)" type="submit"  name="button-clicked" value="on-con">On</button>
-           	<button class="b2" onclick="myFun(2)" type="submit" name="button-clicked" value="off-con">Off</button> 
+            <button class="b1" onclick="myFun('Start Controller')" type="submit"  name="button-clicked" value="on-con">On</button>
+            <button class="b2" onclick="myFun('Stop Controller')" type="submit" name="button-clicked" value="off-con">Off</button> 
             <br>
             <br>
             <hr>
             <br>
             <h3>SAP Connector</h3>
-           	<button class="b1" onclick="myFun(3)" type="submit" name="button-clicked" value="on-ubro">On</button>
-           	<button class="b2" onclick="myFun(4)" type="submit" name="button-clicked" value="off-ubro">Off</button>
+            <button class="b1" onclick="myFun('Start Ubroker')" type="submit" name="button-clicked" value="on-ubro">On</button>
+            <button class="b2" onclick="myFun('Stop Ubroker')" type="submit" name="button-clicked" value="off-ubro">Off</button>
       </form>
     </section>
   </div>
@@ -126,19 +126,8 @@
     <p>Copyright &copy;,Development System by Parag Soni</p>
     </footer>
   <script>
-      function myFun(number){
-     	 if(number==1){
-     		 alert("Press 'OK' to Start Controller");
-     	 }
-     	 else if(number==2){
-     		 alert("Press 'OK' to Stop Controller");
-     	 }
-     	 else if(number==3){
-     		 alert("Press 'OK' to Start Ubroker");
-     	 }
-     	 else if(number==4){
-     		 alert("Press 'OK' to Stop Ubroker");
-     	 }
+      function myFun(mes){
+         alert("Press 'OK' to " + mes);
       }
   </script>
 </body>
